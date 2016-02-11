@@ -43,12 +43,13 @@ def platform_detect():
     if plat.lower().find('armv7l-with-debian') > -1:
         return BEAGLEBONE_BLACK
     elif plat.lower().find('armv7l-with-ubuntu') > -1:
-        return BEAGLEBONE_BLACK
+	if plat.lower().find('elar-systems') > -1:
+		return ASUS
+	else
+        	return BEAGLEBONE_BLACK
     elif plat.lower().find('armv7l-with-glibc2.4') > -1:
         return BEAGLEBONE_BLACK
 
-    # Handle ASUS Tinkerboard
-    # Only adapted for ASUS running ubuntu
         
     # Handle Minnowboard
     # Assumption is that mraa is installed
