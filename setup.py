@@ -23,6 +23,6 @@ setup(name              = 'Adafruit_GPIO',
       description       = 'Library to provide a cross-platform GPIO interface on the Raspberry Pi and Beaglebone Black using the RPi.GPIO and Adafruit_BBIO libraries.',
       license           = 'MIT',
       url               = 'https://github.com/chasepellazar/Adafruit_Python_GPIO/',
-      install_requires  = requires,
+      #install_requires  = requires,
       test_suite        = 'tests',
       packages          = find_packages())
