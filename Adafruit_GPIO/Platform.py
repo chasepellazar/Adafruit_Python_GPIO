@@ -45,7 +45,7 @@ def platform_detect():
     elif plat.lower().find('armv7l-with-ubuntu') > -1:
 	if plat.lower().find('elar-systems') > -1:
 		return ASUS
-	else
+	else:
         	return BEAGLEBONE_BLACK
     elif plat.lower().find('armv7l-with-glibc2.4') > -1:
         return BEAGLEBONE_BLACK
