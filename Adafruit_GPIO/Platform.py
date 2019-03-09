@@ -36,7 +36,7 @@ def platform_detect():
     if pi is not None:
         return RASPBERRY_PI
 
-    # Handle Beaglebone Black
+    # Handle Beaglebone Black and ASUS
     # TODO: Check the Beaglebone Black /proc/cpuinfo value instead of reading
     # the platform.
     plat = platform.platform()
