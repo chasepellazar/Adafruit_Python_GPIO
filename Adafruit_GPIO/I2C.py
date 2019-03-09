@@ -54,6 +54,7 @@ def get_default_bus():
         # Beaglebone Black has multiple I2C buses, default to 1 (P9_19 and P9_20).
         return 1
     elif plat == Platform.ASUS:
+	# ASUS has multiple I2C buses, use i2cdetect -y to fine correct bus
 	return 2
     else:
         raise RuntimeError('Could not determine default I2C bus for platform.')
