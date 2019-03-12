@@ -55,7 +55,7 @@ def get_default_bus():
         return 1
     elif plat == Platform.ASUS:
 	# ASUS has multiple I2C buses, use i2cdetect -y to fine correct bus
-	return 1
+	return 4
     else:
         raise RuntimeError('Could not determine default I2C bus for platform.')
 
